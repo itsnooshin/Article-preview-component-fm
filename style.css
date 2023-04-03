@@ -1,0 +1,134 @@
+:root {
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #ecf2f8;
+  font-family: 'Manrope', sans-serif;
+}
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 490px;
+  margin: 90px 40px 90px 40px;
+  display: grid;
+  /* grid-template-rows: 43% 45%; */
+}
+.container-information {
+  background-color: white;
+}
+.image__container {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.container-information {
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 45px;
+}
+.container-information__title {
+  color: #48556a;
+  font-size: 1.7rem;
+  font-weight: 700;
+  max-width: 300px;
+  line-height: 24px;
+}
+.container-footer {
+  display: flex;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+.container-information__lead {
+  font-size: 1.5rem;
+  color: #6e8098;
+  max-width: 300px;
+  margin: 10px 0;
+  line-height: 20px;
+}
+.image__container-footer {
+  width: 50px;
+  border-radius: 50%;
+}
+.title__conatiner-footer {
+  color: hsla(217, 19%, 35%, 1);
+  font-size: 1.4rem;
+}
+.lead__container-footer {
+  color: hsla(212, 23%, 69%, 1);
+  font-size: 1.4rem;
+  margin-top: 4px;
+}
+.icon-share {
+  background: #ecf2f8;
+  padding: 12px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.container__footer-icon {
+  display: block;
+  margin-left: auto;
+}
+.information-footer {
+  margin-left: 2rem;
+}
+
+@media (min-width: 900px) {
+  html {
+    font-size: 56.25%;
+  }
+  body {
+    position: relative;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 50% 75%;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    max-width: 680px;
+    width: 100%;
+    position: absolute;
+    top: 50%; /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, -50%);
+  }
+
+  .image__container {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: red;
+  }
+  .container-information {
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    padding: 35px;
+  }
+  .image__container {
+    width: 100%;
+    height: 100%;
+  }
+  .container-information__title {
+    font-size: 2.2rem;
+    max-width: 389px;
+    line-height: 29px;
+  }
+  .container-information__lead {
+    font-size: 1.5rem;
+    max-width: 466px;
+  }
+}
