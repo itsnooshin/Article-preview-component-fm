@@ -12,6 +12,9 @@
   padding: 0;
   box-sizing: inherit;
 }
+li {
+  list-style: none;
+}
 html {
   font-size: 62.5%;
   box-sizing: inherit;
@@ -24,6 +27,12 @@ body {
   display: grid;
   place-items: center;
   height: 100vh;
+}
+button {
+  border: none;
+  background-color: none;
+  border-radius: 50%;
+  cursor: pointer;
 }
 img {
   max-width: 100%;
@@ -92,6 +101,11 @@ img {
 .information-footer {
   margin-left: 2rem;
 }
+.conatiner__hidden {
+  background-color: #48556a;
+  display: flex;
+  align-items: center;
+}
 
 @media (min-width: 773px) {
   html {
@@ -102,7 +116,7 @@ img {
     place-items: center;
     height: 100vh;
   }
-
+  
   .container {
     display: grid;
     grid-template-columns: 2fr 3fr;
@@ -123,6 +137,7 @@ img {
     border-top-right-radius: 20px;
     border-bottom-left-radius: 0px;
     padding: 3.5rem 4rem 3rem 4rem;
+   position: relative;
   }
 
   .image__container {
