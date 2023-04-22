@@ -143,10 +143,9 @@ img {
   display: none;
 }
 .img-svg path {
-  fill: 6e8098;
+  fill: #6e8098;
 }
 .button-share-icon {
-  /* background-color: #6E8098; */
   padding: 15px;
 }
 
@@ -179,7 +178,7 @@ img {
   .container-information {
     border-top-right-radius: 20px;
     border-bottom-left-radius: 0px;
-    padding: 3.5rem 4rem 3rem 4rem;
+    padding: 3.5rem 4rem 0rem 4rem;
     position: relative;
   }
 
@@ -194,5 +193,49 @@ img {
   .container-information__lead {
     font-size: 1.5rem;
     max-width: 466px;
+  }
+  .container {
+    position: relative;
+  }
+  .content {
+    /* position: relative; */
+    border-bottom-left-radius: 0;
+  }
+  .container-footer {
+    border-bottom-left-radius: 0;
+  }
+
+  .hidden {
+    background-color: #48556a;
+    padding: 1.5rem 3rem;
+    border-radius: 10px;
+    position: absolute;
+    top: 55%;
+    left: 60%;
+    transform: translate(50%, -50%);
+  }
+  .hidden::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color:#48556a;
+    z-index: 10000;
+    position: absolute;
+    top: 80%;
+    left: 46%;
+    transform: translate(50%, -50%);
+    transform: rotate(-45deg);
+  }
+  .span-share {
+    font-size: 1.5rem;
+  }
+  .icon-f ul {
+    gap: 20px;
+  }
+  .icons-hiden li img {
+    width: 20px;
+  }
+  .icon-f ul {
+    margin-left: 1rem;
   }
 }
