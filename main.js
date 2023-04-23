@@ -8,12 +8,17 @@ const svgIcon = document.querySelector('.img-svg path')
 const hidden = document.querySelector('.hidden')
 const hidde = document.querySelector('.conatiner__hidd')
 
-// const body = (document.body.style.minWidth = '300px')
-hidde.style.display = 'block'
-btnShare.addEventListener('click', function () {
-  footer.style.background = '#48556A'
-  information.style.display = 'none'
-  hidde.style.display = 'block'
-  btnShare.style.background = '#6E8098'
-  svgIcon.style.fill = '#fff'
-})
+if (/Mobile|Tablet/i.test(navigator.userAgent)) {
+  console.log('hhhh')
+} else {
+  console.log('nottttttt');
+}
+
+
+// btnShare.addEventListener('click', function () {
+//   // footer.style.background = '#48556A'
+//   // information.style.display = 'none'
+//   // hidde.style.display = 'block'
+//   // btnShare.style.background = '#6E8098'
+//   // svgIcon.style.fill = '#fff'
+// })
