@@ -1,15 +1,17 @@
 'use strict'
-// selecting the elements
-const btnShare = document.querySelector('.button-share-icon')
+
+const btnShare = document.querySelector('.btn-share')
 const profile = document.querySelector('.information-footer')
 const footer = document.querySelector('.container-footer')
 const information = document.querySelector('.information-footer')
 const svgIcon = document.querySelector('.img-svg path')
-const hidden = document.querySelector('.hidden')
-const hidde = document.querySelector('.conatiner__hidd')
-btnShare.addEventListener('click', function () {
-  hidde.classList.toggle('visible')
-  footer.classList.toggle('visible')
-  // for hide
+const hiddenContainer = document.querySelector('.conatiner__hidd')
+const social = document.querySelector('.socials')
+
+
+btnShare.addEventListener('click', function (e) {
+  e.preventDefault()
+  social.classList.toggle('show')
   information.classList.toggle('hide')
+  footer.classList.toggle('show')
 })
