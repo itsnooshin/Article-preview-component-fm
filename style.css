@@ -108,10 +108,6 @@ img {
 .container-footer {
   padding: 1rem 3rem 2rem 3rem;
 }
-.btn-share .button-share-icon .icon-button {
-  display: block;
-  margin-left: auto;
-}
 
 .icon-button {
   pointer-events: none;
@@ -131,25 +127,13 @@ img {
   display: none;
 }
 
-.socials ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-left: 1rem;
-}
 
 .social-title {
   color: #9daec2;
   letter-spacing: 4px;
   font-size: 1.6rem;
 }
-.btn-hide {
-  display: none;
-}
-.button-share-icon {
-  display: flex;
-}
+
 
 .content {
   background-color: #fff;
@@ -174,13 +158,11 @@ img {
   color: #6e8098;
   font-size: 20px;
   background-color: #ecf2f8;
-
   text-align: right;
 }
 .btn-img {
   padding: 1rem;
   border-radius: 50%;
-  /* font-size: 3rem; */
   width: 20px;
 }
 .btn-share {
@@ -298,7 +280,6 @@ img {
   .socials {
     background-color: #48556a;
     position: absolute;
-   
     max-width: 200px;
     top: -49%;
     left: 16rem;
@@ -332,17 +313,7 @@ img {
     letter-spacing: 6px;
     color: #9daec2;
   }
-  .socials ul {
-    gap: 20px;
-  }
-  .socials ul li img {
-    width: 20px;
-  }
 
-  .socials ul {
-    display: flex;
-    align-items: center;
-  }
  .span-share{
   
   padding-right: 20px;
