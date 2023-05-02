@@ -43,13 +43,15 @@ img {
 .container {
   max-width: 900px;
   margin: 0rem 4rem;
+ 
 }
+
 
 .image__container {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   height: 220px;
-  width: 100%;
+  /* width: 100%; */
 }
 .container-information {
   padding: 3rem 3rem 0rem 3rem;
@@ -66,9 +68,6 @@ img {
   max-width: 380px;
 }
 .container-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -112,8 +111,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 1rem 3rem 1rem 3rem;
 }
-
 .btn-share .button-share-icon .icon-button {
   display: block;
   margin-left: auto;
@@ -124,22 +123,26 @@ img {
 }
 .container-footer.show {
   background-color: #48556a;
-}
-
-.information-footer.hide {
-  visibility: hidden;
-}
-.socials {
-  display: none;
-  margin: 0 auto;
+  padding: 0rem 3rem 1rem 3rem;
 }
 .socials.show {
   display: flex;
 }
 
+.information-footer.hide {
+  visibility: hidden;
+}
+
+.socials {
+  display: none;
+}
+
 .socials ul {
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 1rem;
 }
 
 .social-title {
@@ -147,12 +150,7 @@ img {
   letter-spacing: 4px;
   font-size: 1.6rem;
 }
-.socials ul {
-  gap: 10px;
-}
-.socials ul {
-  margin-left: 1rem;
-}
+
 .content {
   background-color: #fff;
 }
@@ -164,9 +162,6 @@ img {
   background-position: center;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-}
-.container-footer {
-  padding: 1.9rem 2rem;
 }
 
 @media (min-width: 773px) {
@@ -185,14 +180,13 @@ img {
     max-width: 730px;
     margin: 0 auto;
   }
-  
+
   .container-information {
     border-top-right-radius: 20px;
     border-bottom-left-radius: 0px;
     position: relative;
   }
 
-  
   .container-information__title {
     font-size: 2.2rem;
     max-width: 400px;
@@ -268,11 +262,11 @@ img {
   }
 
   .image {
-    background-image: url("./images/drawers.jpg");
-  
-   background-size: cover;
-   background-position:left center;
-   height: 100%;
+    background-image: url('./images/drawers.jpg');
+
+    background-size: cover;
+    background-position: left center;
+    height: 100%;
     border-top-right-radius: 0px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -280,7 +274,10 @@ img {
   .container-footer {
     padding: 0rem 3rem 4rem 3rem;
   }
-  .container-information{
+  .container-information {
     padding: 4rem 4rem 0 4rem;
+  }
+  .container-footer.show {
+    padding: 0rem 3rem 4rem 3rem;
   }
 }

@@ -14,4 +14,6 @@ btnShare.addEventListener('click', function (e) {
   social.classList.toggle('show')
   information.classList.toggle('hide')
   footer.classList.toggle('show')
+
+
 })
