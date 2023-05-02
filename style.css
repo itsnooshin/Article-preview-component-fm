@@ -43,15 +43,13 @@ img {
 .container {
   max-width: 900px;
   margin: 0rem 4rem;
- 
 }
-
 
 .image__container {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   height: 220px;
-  /* width: 100%; */
+  width: 100%;
 }
 .container-information {
   padding: 3rem 3rem 0rem 3rem;
@@ -108,10 +106,7 @@ img {
   padding: 9px 8px;
 }
 .container-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 3rem 1rem 3rem;
+  padding: 1rem 3rem 2rem 3rem;
 }
 .btn-share .button-share-icon .icon-button {
   display: block;
@@ -121,12 +116,11 @@ img {
 .icon-button {
   pointer-events: none;
 }
-.container-footer.show {
-  background-color: #48556a;
-  padding: 0rem 3rem 1rem 3rem;
-}
+
 .socials.show {
   display: flex;
+  display: flex;
+  align-items: center;
 }
 
 .information-footer.hide {
@@ -150,6 +144,12 @@ img {
   letter-spacing: 4px;
   font-size: 1.6rem;
 }
+.btn-hide {
+  display: none;
+}
+.button-share-icon {
+  display: flex;
+}
 
 .content {
   background-color: #fff;
@@ -164,6 +164,95 @@ img {
   border-top-left-radius: 20px;
 }
 
+.container-footer {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.fa-share {
+  cursor: pointer;
+  color: #6e8098;
+  font-size: 20px;
+  background-color: #ecf2f8;
+
+  text-align: right;
+}
+.btn-img {
+  padding: 1rem;
+  border-radius: 50%;
+  /* font-size: 3rem; */
+  width: 20px;
+}
+.btn-share {
+  position: absolute;
+
+  right: 0;
+  margin-right: 20px;
+}
+
+.information {
+  margin-left: 1rem;
+}
+
+.socials {
+  background-color: #48556a;
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 3rem 3rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 19999;
+
+}
+.socials .btn-share-el {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  top: 0;
+}
+.socials a {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.btn-share-icon {
+  background-image: url('./images/icon-share.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+.btn-share-hide {
+  background-image: url('./images/3.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  background-color: #48556a;
+  background-color: none;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+.btn-share-icon.hide {
+  display: none;
+}
+.span-share{
+  padding-right: 20px;
+ }
+
+/* laptop */
 @media (min-width: 773px) {
   html {
     font-size: 56.25%;
@@ -179,12 +268,12 @@ img {
     grid-template-columns: 2fr 3fr;
     max-width: 730px;
     margin: 0 auto;
+    position: relative;
   }
 
   .container-information {
     border-top-right-radius: 20px;
     border-bottom-left-radius: 0px;
-    position: relative;
   }
 
   .container-information__title {
@@ -195,27 +284,33 @@ img {
     font-size: 1.5rem;
     max-width: 466px;
   }
-  .container {
-    position: relative;
-  }
+
   .content {
     border-bottom-left-radius: 0;
     border-top-right-radius: 20px;
+    
   }
   .container-footer {
     border-bottom-left-radius: 0;
+    position: none;
   }
 
   .socials {
     background-color: #48556a;
-    padding: 1.5rem 3rem;
-    border-radius: 10px;
     position: absolute;
-    top: 58%;
-    left: 61%;
+   
+    max-width: 200px;
+    top: -40%;
+    left: 16rem;
+    bottom: 100%;
+    right: 5rem;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     transform: translate(50%, -50%);
     visibility: hidden;
     display: flex;
+    align-items: center;
+    border-radius: 12px;
   }
   .socials.show {
     visibility: visible;
@@ -242,15 +337,15 @@ img {
   .socials ul li img {
     width: 20px;
   }
-  .socials ul {
-    margin-left: 1rem;
-  }
 
   .socials ul {
     display: flex;
     align-items: center;
   }
-
+ .span-share{
+  
+  padding-right: 20px;
+ }
   .container-footer.show {
     background-color: #ffff;
   }
@@ -263,7 +358,6 @@ img {
 
   .image {
     background-image: url('./images/drawers.jpg');
-
     background-size: cover;
     background-position: left center;
     height: 100%;
@@ -279,5 +373,8 @@ img {
   }
   .container-footer.show {
     padding: 0rem 3rem 4rem 3rem;
+  }
+  .btn-share-hide {
+    display: none
   }
 }
