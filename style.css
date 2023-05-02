@@ -108,11 +108,6 @@ img {
 .container-footer {
   padding: 1rem 3rem 2rem 3rem;
 }
-
-.icon-button {
-  pointer-events: none;
-}
-
 .socials.show {
   display: flex;
   display: flex;
@@ -127,13 +122,11 @@ img {
   display: none;
 }
 
-
 .social-title {
   color: #9daec2;
   letter-spacing: 4px;
   font-size: 1.6rem;
 }
-
 
 .content {
   background-color: #fff;
@@ -188,7 +181,6 @@ img {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   z-index: 19999;
-
 }
 .socials .btn-share-el {
   position: absolute;
@@ -230,11 +222,10 @@ img {
 .btn-share-icon.hide {
   display: none;
 }
-.span-share{
+.span-share {
   padding-right: 20px;
- }
+}
 
-/* laptop */
 @media (min-width: 773px) {
   html {
     font-size: 56.25%;
@@ -270,7 +261,6 @@ img {
   .content {
     border-bottom-left-radius: 0;
     border-top-right-radius: 20px;
-    
   }
   .container-footer {
     border-bottom-left-radius: 0;
@@ -314,10 +304,9 @@ img {
     color: #9daec2;
   }
 
- .span-share{
-  
-  padding-right: 20px;
- }
+  .span-share {
+    padding-right: 20px;
+  }
   .container-footer.show {
     background-color: #ffff;
   }
@@ -347,6 +336,6 @@ img {
     padding: 0rem 3rem 4rem 3rem;
   }
   .btn-share-hide {
-    display: none
+    display: none;
   }
 }
